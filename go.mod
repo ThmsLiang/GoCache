@@ -1,3 +1,7 @@
-module GoCache
+module main
 
-go 1.20
+go 1.13
+
+require gocache v0.0.0
+
+replace gocache => ./gocache

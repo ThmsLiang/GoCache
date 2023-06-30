@@ -5,7 +5,7 @@
 //                             |  No
 //                             |-----> call callback function, add to cache --> return
 
-package GoCache
+package gocache
 
 import (
 	"fmt"
@@ -69,7 +69,7 @@ func (g *Group) Get(key string) (ByteView, error) {
 	}
 
 	if v, ok := g.mainCache.get(key); ok {
-		log.Println("[GoCache] hit!")
+		log.Println("[gocache] hit!")
 		return v, nil
 	}
 

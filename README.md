@@ -10,15 +10,16 @@ This project follows blog [GeeCache](https://geektutu.com/post/geecache.html).
 
 GoCache supported the following features:
 
-- Local cache and HTTP-based distributed cache.
+- Local caching and HTTP-based distributed caching.
 - LRU (Least Recent Use) cache strategy.
 - Avoid cache breakdown using `sync.Mutex` from Go.
 - Choose nodes with consistent hashing for load balance.
-- Optimize binary communication between two nodes with Protobuf.
+- Optimize binary communication between two peers with Protobuf.
 
 ## Structure
 
-- `lru/lru.go`: Implemented Least-Recent-Use strategy for cache
-- `byteview.go`: Abstruct and insulation of byte array in cache
-- `cache.go`: Wrap lru and mutex for concurrency control
-- `gocache.go`: Interact with outside, main procedure for get and update cache
+- `gocache/lru/lru.go`: Implemented Least-Recent-Use strategy for cache
+- `gocache/byteview.go`: Abstruct and insulation of byte array in cache
+- `gocache/cache.go`: Wrap lru and mutex for concurrency control
+- `gocache/gocache.go`: Interact with outside, main procedure for get and update cache
+- `gocache/http.go`: Define a http pool and parse http request for key search
