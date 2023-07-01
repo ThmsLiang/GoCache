@@ -24,3 +24,4 @@ GoCache supported the following features:
 - `gocache/gocache.go`: Interact with outside, main procedure for get and update cache
 - `gocache/http.go`: Define a http pool and parse http request for key search
 - `gocache/consistenthash/consistenthash.go`: Implemented consistent hasing
+- `gocache/peers.go`: define `PeerPicker` and `PeerGetter` interface
