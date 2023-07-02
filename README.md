@@ -18,10 +18,19 @@ GoCache supported the following features:
 
 ## Structure
 
-- `gocache/lru/lru.go`: Implemented Least-Recent-Use strategy for cache
-- `gocache/byteview.go`: Abstruct and insulation of byte array in cache
-- `gocache/cache.go`: Wrap lru and mutex for concurrency control
-- `gocache/gocache.go`: Interact with outside, main procedure for get and update cache
-- `gocache/http.go`: Define a http pool and parse http request for key search
-- `gocache/consistenthash/consistenthash.go`: Implemented consistent hasing
-- `gocache/peers.go`: define `PeerPicker` and `PeerGetter` interface
+- Basic Data Structure:
+
+  - `gocache/lru/lru.go`: Implemented Least-Recent-Use strategy for cache
+  - `gocache/byteview.go`: Abstruct and insulation of byte array in cache
+  - `gocache/cache.go`: Wrap lru and mutex for concurrency control
+  - `gocache/gocache.go`: Interact with outside, main procedure for get and update cache
+
+- HTTP related:
+
+  - `gocache/http.go`: Define a http pool and parse http request for key search
+  - `gocache/consistenthash/consistenthash.go`: Implemented consistent hasing
+  - `gocache/peers.go`: Define `PeerPicker` and `PeerGetter` interface
+  - `gocache/singleflight/singleflight.go`: Implemented `singleflight` to prevent cache breakdown
+
+- Other:
+- `run.sh`: start the server and run main.go
