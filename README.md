@@ -33,4 +33,5 @@ GoCache supported the following features:
   - `gocache/singleflight/singleflight.go`: Implemented `singleflight` to prevent cache breakdown
 
 - Other:
+  - `gocache/gocachepb/gocachepb.proto`: Use [Protobuf](https://github.com/protocolbuffers/protobuf) for peers to communicate
   - `run.sh`: start the server and run main.go
