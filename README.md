@@ -31,7 +31,7 @@ GoCache supported the following features:
   - `gocache/consistenthash/consistenthash.go`: Implemented consistent hasing
   - `gocache/peers.go`: Define `PeerPicker` and `PeerGetter` interface
   - `gocache/singleflight/singleflight.go`: Implemented `singleflight` to prevent cache breakdown
+  - `gocache/gocachepb/gocachepb.proto`: Use [Protobuf](https://github.com/protocolbuffers/protobuf) for peers to communicate
 
 - Other:
-  - `gocache/gocachepb/gocachepb.proto`: Use [Protobuf](https://github.com/protocolbuffers/protobuf) for peers to communicate
-  - `run.sh`: start the server and run main.go
+  - `run.sh`: Start the server and run main.go
