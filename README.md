@@ -23,7 +23,7 @@ GoCache supported the following features:
   - `gocache/lru/lru.go`: Implemented Least-Recent-Use strategy for cache
   - `gocache/byteview.go`: Abstruct and insulation of byte array in cache
   - `gocache/cache.go`: Wrap lru and mutex for concurrency control
-  - `gocache/gocache.go`: Interact with outside, main procedure for get and update cache
+  - `gocache/gocache.go`: Interact with outside, main procedure to get and update cache
 
 - HTTP related:
 
@@ -33,4 +33,4 @@ GoCache supported the following features:
   - `gocache/singleflight/singleflight.go`: Implemented `singleflight` to prevent cache breakdown
 
 - Other:
-- `run.sh`: start the server and run main.go
+  - `run.sh`: start the server and run main.go
